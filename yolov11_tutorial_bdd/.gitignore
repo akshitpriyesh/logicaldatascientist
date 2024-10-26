@@ -1,0 +1,30 @@
+# Ignore model weights and checkpoints
+yolov11_custom/runs/detect/train*/weights/
+*.pt
+*.onnx
+
+# Ignore training and validation batch images
+yolov11_custom/runs/detect/train*/train_batch*.jpg
+yolov11_custom/runs/detect/train*/val_batch*_labels.jpg
+yolov11_custom/runs/detect/train*/val_batch*_pred.jpg
+
+# Ignore output files and plots
+yolov11_custom/runs/detect/train*/confusion_matrix*.png
+yolov11_custom/runs/detect/train*/PR_curve.png
+yolov11_custom/runs/detect/train*/F1_curve.png
+yolov11_custom/runs/detect/train*/P_curve.png
+yolov11_custom/runs/detect/train*/R_curve.png
+yolov11_custom/runs/detect/train*/labels*.jpg
+yolov11_custom/runs/detect/train*/results.png
+yolov11_custom/runs/detect/train*/results.csv
+
+# Ignore video files and large images
+yolov11_custom/lds_road.mp4
+yolov11_custom/runs/detect/predict/*.avi
+yolov11_custom/runs/detect/predict/*.jpg
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore miscellaneous files
+# preprocessing/*.ipynb

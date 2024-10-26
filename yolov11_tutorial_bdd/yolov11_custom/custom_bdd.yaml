@@ -1,0 +1,25 @@
+# Ultralytics YOLO 🚀, AGPL-3.0 license
+# BDD100K Dataset in YOLO format
+# Documentation: https://docs.ultralytics.com/datasets/detect/coco8/
+# Example usage: yolo train data=bdd100k.yaml
+
+# Dataset root directory
+path: /home/akshit/codes_and_data/data/1k/1ksamples
+
+# Train, validation, and test directories (relative to 'path')
+train: images/train  # train images
+val: images/val  # val images
+test: images/test  # test images (optional)
+
+# Classes
+names:
+  0: pedestrian
+  1: rider
+  2: car
+  3: truck
+  4: bus
+  5: train
+  6: motorcycle
+  7: bicycle
+  8: traffic light
+  9: traffic sign
